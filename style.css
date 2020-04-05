@@ -1,16 +1,21 @@
-body {
+*{
     margin: 0;
-    font-family: 'Vollkorn', serif
+    padding: 0;
+}
+body {
+    font-family: 'Public Sans', sans-serif;
 }
 h1 {
     font-size: 50px;
 }
 h2 {
     font-size: 40px;
+    font-weight: 600;
 }
 p {
-    color: dimgrey;
-    margin-bottom: 20px;
+    color: dimgrey; 
+    margin-top: 30px;
+    margin-bottom: 40px; 
 }
 .color-highlight{
     color: #EC4C7A;
@@ -19,14 +24,30 @@ section{
     height: 650px;
 }
 
-.half-width img{
-    width: 100%;
-    height: 500px;
-}
-.top-banner{
+
+.header{
     background-image: url("images/header-bg.png");
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
+    background-size: cover;
+}
+
+.top-banner{
+    width: 37%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+
+.top-banner-content{
+    margin-top: 200px;
+    margin-left: 170px;
+}
+
+.top-banner img{
+    width: 100%;
+    height: 500px;
 }
 
 .half-width{
@@ -37,8 +58,13 @@ section{
     padding-left: 2%;
 }
 
+.half-width img{
+    width: 100%;
+    height: 500px;
+}
+
 .halfwidth-content{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .link-button{
@@ -48,17 +74,19 @@ section{
     border-radius: 5px;
     color: white;
     font-weight: 550;
+    
 }
 
 .biography{
     background-image: url("images/biography-bg.png");
     background-repeat: no-repeat;
     background-position: left;
-       
+    margin-bottom: 50px;
+
 }
 
 .latest-work{
-   float:left;
+   height: 500px;
    width: 100%;
    background-image: url("images/latest-work-bg.png");
    background-repeat: no-repeat;
@@ -66,8 +94,9 @@ section{
    background-size: cover;
    text-align: center;
    padding:50px 10px;
-   margin-bottom:50px; 
-   }
+   margin-bottom: 50px;
+
+}
    
 .latest-work .content{
     float:left;
@@ -77,41 +106,49 @@ section{
    }
    
    .latest-work .content .card{
-   width:25%;
+   width:26%;
    float: left;
    padding:0px 15px;
    }
 
-.latest-work .content .card .box img{
+.latest-work .content .card img{
     width: 100%;
    }
 
-   .footer{
+.footer{
     width: 100%;
-	height: 700px;
-	background-image: url("images/footer-bg.png");
-	background-position: right;
+	height: 500px;
+    background-image: url("images/footer-bg.png");
+    background-position: center;
 	background-size: cover;
     text-align: center;
    }
+.name{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
-   .sub-title{
+.title{
     font-size: small;
+    color: dimgray;
+    
 }
 
 .sms{
+    margin-top: 50px;
     color: black;
     font-size: large;
     font-weight: 500;
 }
 
 .mail-box{
-    width: 500px;
+    width: 600px;
     height: 100px;
     background-image: linear-gradient(45deg, #ED4B70, #EC5094);
     border-radius: 5px;
     margin: auto;
-    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
 
 }
 
@@ -119,11 +156,13 @@ section{
     margin-top: 5px;
     padding-top: 5px;
     color: white;
+    
 }
 
-.mail-content p{
+.mail-content h5{
+    margin-top: 15px;
     color: white;
-    font-size: small;
+    font-size: smaller;
 }
 
 .mail-content .email{
@@ -131,5 +170,5 @@ section{
 }
 
 footer p{
-    
+    text-align: center;
 }
